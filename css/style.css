@@ -1,21 +1,37 @@
-/* RESET */
+/* Variables */
+:root{
+    /* colors */
+    --backgound-color:#3161E0;
+    --dark-gray-color: #8EA1E1;
+    --button-color-header: #23272A;
+    --light-gray-color: #F6F6F6;
+    --footer-bg-color: #23272A;
+}
 
+/* RESET */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+}
 /* COMMON */
 /* Layout */
 .container{
     width: 70%;
     max-width: 1100px;
     margin: 0 auto;
-
+ 
     /* debug */
-    background-color: yellow;
-    min-height: 40px;
+    /* background-color: yellow;
+    min-height: 40px; */
+} 
+
+a{
+    text-decoration: none;
 }
 
 /*UTILITIES*/
@@ -34,25 +50,35 @@
 .bg-gray{
     background-color: lightgray;
 }
-/* HEADER */
 
+.button{
+    padding: .2rem;
+    border-radius: 20px;
+}
+
+li a{
+    color: white;
+    font-size: 1rem;
+}
+/* HEADER */
 /* navigation bar */
 .nav-container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
+    background-color: var(--backgound-color);
 
     /* debug */
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
 
 /* debug */
-.logo,
+/* .logo,
 .header-navigation,
 .login{
     border: 1px dashed black;
-}
+} */
 
 .logo,
 .login{
@@ -73,33 +99,61 @@
     margin: .5rem;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-}
-
 .login{
     text-align: right;
+}
+
+.login a{
+    background-color: white;
+    color: black;
 }
 
 /* main header */
 
 .header-container{
     padding: 30px 0;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
 
     /* debug */
-    background-color: blue;
-    height: 400px;
+    /* background-color: blue;
+    height: 400px; */
 }
 
 .header-text{
     width: 50%;
     margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
 
     /* debug */
-    height: 300px;
+    /* height: 300px;
     background-color: pink;
-    border: 1px dashed black;
+    border: 1px dashed black; */
+}
+
+.title-header,
+.description-header,
+.open{
+    color: white;    
+}
+
+p.description-header{
+    margin: 15px 0;
+}
+
+.btn-container{
+    display: inline-block;
+}
+.open,.download{
+    margin-right: 10px;
+}
+.download{
+    background-color: white;
+}
+
+.open{
+    background-color: var(--button-color-header);
 }
 
 /* MAIN */
