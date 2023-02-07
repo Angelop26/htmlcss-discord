@@ -34,6 +34,10 @@ a{
     text-decoration: none;
 }
 
+h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
 /*UTILITIES*/
 .flex{
     display: flex;
@@ -48,7 +52,7 @@ a{
 }
 
 .bg-gray{
-    background-color: lightgray;
+    background-color: var(--light-gray-color);
 }
 
 .button{
@@ -181,28 +185,36 @@ main section{
     /* background-color: blueviolet; */
 }
 
-.main-text h2{
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-}
-
 .big h2,
 .big p{
     text-align: center;
 }
-
-.bg-gray{
-    background-color: lightgray;
-    flex-direction: row-reverse;
+.incipit{
+    text-align: center;
+    background-image: url(../img/stars.svg);
+    width: 50%;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 31px;
+    margin: 30px auto;
 }
 
+.incipit-button{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.btn-main{    
+    background-color: var(--dark-gray-color);
+    color: white;
+}
 /* FOOTER */
 
 
 .ft-top,
 .ft-bottom{
     background-color: #23272a;
-    border: 1px solid lightgray;
 }
 /* upper part */
 
@@ -214,26 +226,58 @@ main section{
     width: 30%;
 
     /* debug */
-    height: 500px;
-    background-color: pink;
+    /* height: 500px;
+    background-color: pink; */
 }
 
+.main-column p{
+    display: inline-block;
+    color: white;
+}
+
+.main-column h2{
+    color: var(--dark-gray-color);
+}
+.flag{
+    height: 16px;
+}
+.social{
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 15px;
+}
 .menu-column{
     width: 70%;
 
     /* debug */
-    height: 500px;
-    background-color: darkcyan;
+    /* height: 500px;
+    background-color: darkcyan; */
 }
 
 .info{
     width: calc(100% / 4);
 
     /* debug */
-    height: 500px;
-    border: 1px solid white;
+    /* height: 500px;
+    border: 1px solid white; */
 }
 
+.info ul{
+    list-style-type: none;
+}
+
+.info li{
+    margin-bottom: 10px;
+    color: white;
+}
+
+.info li:first-child{
+    color: var(--dark-gray-color);
+}
+
+.ft-top .container{
+    border-bottom: 2px solid var(--backgound-color);
+}
 /* down part */
 .ft-bottom{
     padding: 10px 0;
